@@ -10,6 +10,9 @@ public class FizzBuzz {
         if (isDivisibleBy5(number)) {
             sb.append("Buzz");
         }
+        if (sb.isEmpty()) {
+            return String.valueOf(number);
+        }
         return sb.toString();
     }
 

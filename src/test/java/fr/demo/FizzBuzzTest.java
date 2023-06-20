@@ -46,4 +46,11 @@ class FizzBuzzTest {
 
         Assertions.assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    void should_return_the_same_number() {
+        String result = FizzBuzz.evaluate(77);
+
+        Assertions.assertEquals("77", result);
+    }
 }
