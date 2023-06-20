@@ -32,4 +32,11 @@ class FizzBuzzTest {
 
         Assertions.assertEquals("Buzz", result);
     }
+
+    @Test
+    void should_return_FizzBuzz_when_divisible_by_3_and_5() {
+        String result = FizzBuzz.evaluate(15);
+
+        Assertions.assertEquals("FizzBuzz", result);
+    }
 }

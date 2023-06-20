@@ -3,10 +3,18 @@ package fr.demo;
 public class FizzBuzz {
 
     public static String evaluate(int number) {
-        if (isDivisibleBy5(number)) {
-            return "Buzz";
+        StringBuilder sb = new StringBuilder();
+        if (isDivisibleBy3(number)) {
+            sb.append("Fizz");
         }
-        return "Fizz";
+        if (isDivisibleBy5(number)) {
+            sb.append("Buzz");
+        }
+        return sb.toString();
+    }
+
+    private static boolean isDivisibleBy3(int number) {
+        return number % 3 == 0;
     }
 
     private static boolean isDivisibleBy5(int number) {
