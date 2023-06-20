@@ -39,4 +39,11 @@ class FizzBuzzTest {
 
         Assertions.assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    void should_return_FizzBuzz_when_divisible_by_3_and_5_another_case() {
+        String result = FizzBuzz.evaluate(75);
+
+        Assertions.assertEquals("FizzBuzz", result);
+    }
 }
