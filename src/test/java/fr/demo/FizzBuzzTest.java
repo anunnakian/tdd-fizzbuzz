@@ -18,4 +18,11 @@ class FizzBuzzTest {
 
         Assertions.assertEquals("Fizz", result);
     }
+
+    @Test
+    void should_return_Fizz_when_5() {
+        String result = FizzBuzz.evaluate(5);
+
+        Assertions.assertEquals("Buzz", result);
+    }
 }
